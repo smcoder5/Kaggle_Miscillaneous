@@ -4,7 +4,7 @@ statsmodels
 streamlit_folium
 scikit-learn
 plotly
-streamlit
 branca
 folium
-tensorflow==2.15.0
+tensorflow
+keras.preprocessing
