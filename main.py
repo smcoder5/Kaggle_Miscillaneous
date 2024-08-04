@@ -1,6 +1,6 @@
 import streamlit as s
 import stellar_classify as sc
-#import titanic as td
+import titanic as td
 
 
 
@@ -9,9 +9,8 @@ with s.sidebar:
     
     rad=s.radio("Ocean Data Set Page",['Stellar Classification','Titanic Dataset']) 
 
-if(rad=='Carbonate Chemistry'):
+if(rad=='Stellar Classification'):
     sc.main()
 
-elif(rad=='Carbonate Concentration'):
-    pass
-    #td.main()
+elif(rad=='Titanic Dataset'):
+    td.main()
