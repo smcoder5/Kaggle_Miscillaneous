@@ -1,6 +1,6 @@
 import streamlit as s
 import stellar_classify as sc
-import titanic as td
+#import titanic as td
 
 
 
@@ -13,4 +13,5 @@ if(rad=='Carbonate Chemistry'):
     sc.main()
 
 elif(rad=='Carbonate Concentration'):
-    td.main()
+    pass
+    #td.main()
