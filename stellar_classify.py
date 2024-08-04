@@ -5,18 +5,18 @@ import streamlit as s
 def main():
     c1=s.columns(3)
     with c1[0]:
-        rs=s.number_input(" Redshift value based on the increase in wavelength",min_value=-1, max_value=10, value=0.5, step=0.01)
+        rs=s.number_input(" Redshift value based on the increase in wavelength",min_value=-1.0, max_value=10.0, value=0.5, step=0.01)
     with c1[1]:
-        u=s.number_input("Ultraviolet filter in the photometric system",min_value=0, max_value=40, value=0.5, step=0.010)
+        u=s.number_input("Ultraviolet filter in the photometric system",min_value=0.0, max_value=40.0, value=0.5, step=0.010)
     with c1[2]:
-        g=s.number_input("Green filter in the photometric system",min_value=0, max_value=40, value=0.5, step=0.010)
+        g=s.number_input("Green filter in the photometric system",min_value=0.0, max_value=40.0, value=0.5, step=0.010)
     c2=s.columns(3)
     with c2[0]:
-        r=s.number_input("Red filter in the photometric system",min_value=0, max_value=40, value=0.5, step=0.010)
+        r=s.number_input("Red filter in the photometric system",min_value=0.0, max_value=40.0, value=0.5, step=0.010)
     with c2[1]:
-        i=s.number_input("Near Infra Red filter in the photometric system",min_value=0, max_value=40, value=0.5, step=0.010)
+        i=s.number_input("Near Infra Red filter in the photometric system",min_value=0.0, max_value=40.0, value=0.5, step=0.010)
     with c2[2]:
-        z=s.number_input("Infra Red filter in the photometric system",min_value=0, max_value=40, value=0.5, step=0.010)
+        z=s.number_input("Infra Red filter in the photometric system",min_value=0.0, max_value=40.0, value=0.5, step=0.010)
     ## 'redshift','z','u','i','g','r'
 
     input=[[rs,u,g,r,i,z]] 
