@@ -1,6 +1,6 @@
 import streamlit as s
 import stellar_classify as sc
-import titanic_data as td
+import titanic as td
 
 
 
