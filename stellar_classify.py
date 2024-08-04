@@ -1,5 +1,5 @@
 import streamlit as s
-from tensorflow.keras.models import load_model
+#from tensorflow.keras.models import load_model
 
 
 def main():
@@ -20,10 +20,11 @@ def main():
     ## 'redshift','z','u','i','g','r'
 
     input=[[rs,u,g,r,i,z]] 
-    model=load_model(r'stellar_classify_model.h5')
+    
 
     s.button("Predict", type="primary")
     if s.button:
+        model=load_model(r'stellar_classify_model.h5')
         c=s.columns(3) 
         out=model.predict(input)[0]
         with c.columns[0]:
