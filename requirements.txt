@@ -1,4 +1,4 @@
-numpy==1.21.6
+numpy
 pandas
 statsmodels
 streamlit_folium
