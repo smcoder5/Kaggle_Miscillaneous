@@ -28,7 +28,7 @@ def model():
 
 
 def main():
-  s.title("Titanic Survival Prediction") 
+    s.title("Titanic Survival Prediction") 
     
     cl=s.columns([1,3,1]) 
     with cl[0]:
@@ -46,7 +46,7 @@ def main():
     fare=s.slider("Enter the Fare charges of Passenger",min_value=0, max_value=750) 
     gend= {"Male": 0, "Female": 1}
     ports = {"S": 0, "C": 1, "Q": 2}
-
+    
     gen=gend[gen]
     port=ports[port[0]] 
     l=[[age,fare,parch,sib,port,cls,gen]] 
@@ -57,7 +57,7 @@ def main():
             s.write("Given Passenger has Survived.")
         else:
             s.write("Given Passenger has not Survived.")
-    
+
 
 
 if __name__ == "__main__": 
