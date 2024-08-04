@@ -24,7 +24,7 @@ def main():
 
     s.button("Predict", type="primary")
     if s.button:
-        model=load_model(r'stellar_classify_model.h5')
+        model=load_model('stellar_classify_model.h5')
         c=s.columns(3) 
         out=model.predict(input)[0]
         with c.columns[0]:
