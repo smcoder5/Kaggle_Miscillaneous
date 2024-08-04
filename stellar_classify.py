@@ -1,5 +1,5 @@
 import streamlit as s
-#from tensorflow.keras.models import load_model
+from tensorflow.keras.models import load_model
 
 
 def main():
