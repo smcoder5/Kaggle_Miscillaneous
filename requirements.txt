@@ -7,4 +7,4 @@ plotly
 branca
 folium
 tensorflow==2.15.0
-protobuf<3.20,>=3.9.2
+
