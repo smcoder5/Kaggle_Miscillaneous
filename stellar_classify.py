@@ -11,11 +11,11 @@ def main():
     with c1.columns[2]:
         g=s.number_input("Green filter in the photometric system",min_value=0, max_value=40, value=0.5, step=0.010)
     c2=s.columns(3)
-    with c1.columns[0]:
+    with c2.columns[0]:
         r=s.number_input("Red filter in the photometric system",min_value=0, max_value=40, value=0.5, step=0.010)
-    with c1.columns[1]:
+    with c2.columns[1]:
         i=s.number_input("Near Infra Red filter in the photometric system",min_value=0, max_value=40, value=0.5, step=0.010)
-    with c1.columns[2]:
+    with c2.columns[2]:
         z=s.number_input("Infra Red filter in the photometric system",min_value=0, max_value=40, value=0.5, step=0.010)
     ## 'redshift','z','u','i','g','r'
 
