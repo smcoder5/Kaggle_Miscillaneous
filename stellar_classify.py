@@ -1,5 +1,5 @@
 import streamlit as s
-from tensorflow.keras.models import load_model
+import tensorflow as tf
 
 
 def main():
@@ -24,7 +24,7 @@ def main():
 
     s.button("Predict", type="primary")
     if s.button:
-        model=load_model('stellar_classify_model.h5')
+        model=.keras.models.load_model('stellar_classify_model.h5')
         c=s.columns(3) 
         out=model.predict(input)[0]
         with c.columns[0]:
