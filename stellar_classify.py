@@ -27,11 +27,11 @@ def main():
         model=tf.keras.models.load_model('stellar_classify_model.h5', compile=False)
         c=s.columns(3) 
         out=model.predict(input)[0]
-        with c.columns[0]:
+        with c[0]:
             s.metric("Star Probability in %",round(out[0]*100,2))
-        with c.columns[1]:
+        with c[1]:
             s.metric("Galaxy Probability in %",round(out[1]*100,2))
-        with c.columns[2]:
+        with c[2]:
             s.metric("Quasor Probability in %",round(out[2]*100,2))
 
     pass
