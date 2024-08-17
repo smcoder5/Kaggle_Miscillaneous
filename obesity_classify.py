@@ -13,6 +13,8 @@ MTRANS= {'Walking':0, 'Motorbike':1, 'Bike':2, 'Automobile':3, 'Public_Transport
 
 
 '''
+def main():
+
 
 
 if __name__=="__main__":
@@ -28,13 +30,13 @@ if __name__=="__main__":
     with c1[3]:
         wa=s.number_input("Enter the daily water consumption in liters ",min_value=0,max_value=10.0,step=0.1)   ##Consumption of water daily
     with c1[4]:
-        faf= # Physical activity frequency
+        faf=s.number_input("Enter the daily number of main meals ",min_value=0,max_value=7,value=2,step=1) # Physical activity frequency
     with c1[5]:
-        tue= ## Time using technology devices 
+        tue=s.number_input("Enter the Time using Technological Devices ",min_value=0,max_value=5,value=2,step=0.01) ## Time using technology devices 
     with c1[6]:
         ncp=s.number_input("Enter the daily number of main meals ",min_value=0,max_value=7,value=2,step=1)  ## Number of main meals 
     with c1[7]:
-        fcvc=  ## Frequency of consumption of vegetables
+        fcvc=s.number_input("Enter the frequency of vegetable consumption ",min_value=0,max_value=5,value=2,step=0.01)  ## Frequency of consumption of vegetables
 
     c2=s.columns(5)
 
