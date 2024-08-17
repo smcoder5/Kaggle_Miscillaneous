@@ -14,12 +14,6 @@ MTRANS= {'Walking':0, 'Motorbike':1, 'Bike':2, 'Automobile':3, 'Public_Transport
 
 '''
 def main():
-
-
-
-if __name__=="__main__":
-    s.set_page_config(page_title='Stellar Classification',layout='wide') 
-
     c1=s.columns(8)
     with c1[0]:
         age=s.number_input("Enter the agw in years",min_value=5,max_value=135,value=25) 
@@ -47,12 +41,12 @@ if __name__=="__main__":
     with c2[2]:
         smoke=s.radio("Smoking History",['Yes','No']) 
     with c2[3]:
-        favc=s.radio("",["Yes","No"]) 
+        favc=s.radio("Frequent consumption of high caloric food ",["Yes","No"]) 
     with c2[4]:
-        scc=s.radio("",['Yes','No']) 
+        scc=s.radio("Calories consumption monitoring ",['Yes','No']) 
 
-    caec=s.radio("",['Sometimes','No','Always','Freqiently'],horizontal=True)
-    calc=s.radio("",['Sometimes','No','Freqiently'],horizontal=True)
+    caec=s.radio("Consumption of food between meals",['Sometimes','No','Always','Freqiently'],horizontal=True)
+    calc=s.radio("Consumption of Alcohol",['Sometimes','No','Freqiently'],horizontal=True)
     mtrans=s.radio("Method of Transportation",["Walking","Motorcycle","Cycle","Automobile","Public Transport"],horizontal=True)
 
     gender = {'Male': 0, 'Female':1}
@@ -63,4 +57,11 @@ if __name__=="__main__":
     SCC= {'no':1,'yes':0} 
     CALC= {'Frequently':0, 'no':1, 'Sometimes':2}
     MTRANS= {'Walking':0, 'Motorbike':1, 'Bike':2, 'Automobile':3, 'Public_Transportation':4}
+
+
+
+if __name__=="__main__":
+    s.set_page_config(page_title='Stellar Classification',layout='wide') 
+
+    
 
