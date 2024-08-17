@@ -51,17 +51,21 @@ def main():
 
     gender = {'Male': 0, 'Female':1}
     family_hist= {'yes':1, 'no':0}
-    favc= {'yes':1, 'no':0}
-    caec={'Sometimes':3, 'no':2, 'Always':1, 'Frequently':0}
+    FAVC= {'yes':1, 'no':0}
+    CAEC={'Sometimes':3, 'no':2, 'Always':1, 'Frequently':0}
     SMOKE= {'no':0, 'yes':1}
     SCC= {'no':1,'yes':0} 
     CALC= {'Frequently':0, 'no':1, 'Sometimes':2}
     MTRANS= {'Walking':0, 'Motorbike':1, 'Bike':2, 'Automobile':3, 'Public_Transportation':4}
 
+    BMI=wt/ht/ht
+    gend,fam_hist,smoke,favc,scc,calc,mtrans=gender[gend],family_hist[fam_hist],SNOKE[smoke],FAVC[favc],SCC[scc],CALC[calc],MTRANS[mtrans]  
+    inp=n.array()
+
 
 
 if __name__=="__main__":
     s.set_page_config(page_title='Stellar Classification',layout='wide') 
-
+    main()
     
 
