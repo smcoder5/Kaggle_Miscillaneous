@@ -1,4 +1,6 @@
 import streamlit as s
+import tensorflow as tf
+
 
 '''
 gend = {'Male': 0, 'Female':1}
@@ -60,7 +62,13 @@ def main():
 
     BMI=wt/ht/ht
     gend,fam_hist,smoke,favc,scc,calc,mtrans=gender[gend],family_hist[fam_hist],SNOKE[smoke],FAVC[favc],SCC[scc],CALC[calc],MTRANS[mtrans]  
-    inp=n.array()
+    inp=n.array([['gend','age','BMI','fam_hist','favc','fcvc','ncp','caec','smoke','wa','scc','faf','tue','calc',mtrans]]) 
+    model=tf.keras.models.load_model('obesity_classify_model.h5', compile=False) 
+
+    out=model.predict(inp)[0]
+    pr,ind=out.max(),n.where(out == out.max())[0][0]
+
+    
 
 
 
