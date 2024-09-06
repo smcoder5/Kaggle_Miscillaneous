@@ -1,6 +1,6 @@
 import streamlit as s
 import tensorflow as tf
-
+import numpy as n
 
 '''
 gend = {'Male': 0, 'Female':1}
