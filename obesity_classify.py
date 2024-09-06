@@ -65,8 +65,14 @@ def main():
     inp=n.array([['gend','age','BMI','fam_hist','favc','fcvc','ncp','caec','smoke','wa','scc','faf','tue','calc',mtrans]]) 
     model=tf.keras.models.load_model('obesity_classify_model.h5', compile=False) 
 
-    out=model.predict(inp)[0]
-    pr,ind=out.max(),n.where(out == out.max())[0][0]
+    if(s.button("Predict", type="primary")):
+        out=model.predict(inp)[0]
+        pr,ind=out.max(),n.where(out == out.max())[0][0] 
+        obes_class=['Insufficient_Weight','Normal_Weight','Overweight_Level_I','Overweight_Level_II','Obesity_Type_I','Obesity_Type_II','Obesity_Type_III'] 
+
+        s.write(" The given Person is classified as: "+obes_class[ind])
+    
+    
 
     
 
