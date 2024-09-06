@@ -62,7 +62,7 @@ def main():
 
     BMI=wt/ht/ht
     gend,fam_hist,smoke,favc,scc,calc,mtrans=gender[gend],family_hist[fam_hist],SMOKE[smoke],FAVC[favc],SCC[scc],CALC[calc],MTRANS[mtrans]  
-    inp=n.array([['gend','age','BMI','fam_hist','favc','fcvc','ncp','caec','smoke','wa','scc','faf','tue','calc',mtrans]]) 
+    inp=n.array([[gend,age,BMI,fam_hist,favc,fcvc,ncp,caec,smoke,wa,scc,faf,tue,calc,mtrans]]) 
     s.write(inp)
     model=tf.keras.models.load_model('obesity_classify_model.h5', compile=False) 
 
