@@ -16,4 +16,4 @@ if(rad=='Stellar Classification'):
 elif(rad=='Titanic Dataset'):
     td.main() 
 elif(rad=='Obesity Classification'):
-    oc.classify()
+    oc.main()
