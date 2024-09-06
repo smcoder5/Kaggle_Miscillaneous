@@ -61,7 +61,7 @@ def main():
     MTRANS= {'Walking':0, 'Motorbike':1, 'Bike':2, 'Automobile':3, 'Public_Transportation':4}
 
     BMI=wt/ht/ht
-    gend,fam_hist,smoke,favc,scc,calc,mtrans=gender[gend],family_hist[fam_hist],SMOKE[smoke],FAVC[favc],SCC[scc],CALC[calc],MTRANS[mtrans]  
+    gend,fam_hist,smoke,favc,scc,calc,mtrans,caec=gender[gend],family_hist[fam_hist],SMOKE[smoke],FAVC[favc],SCC[scc],CALC[calc],MTRANS[mtrans],CAEC[caec]  
     inp=n.array([[gend,age,BMI,fam_hist,favc,fcvc,ncp,caec,smoke,wa,scc,faf,tue,calc,mtrans]]) 
     s.write(inp)
     model=tf.keras.models.load_model('obesity_classify_model.h5', compile=False) 
