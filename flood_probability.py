@@ -60,6 +60,7 @@ def main():
 
     model=tf.keras.models.load_model('model_flood.keras', compile=False) 
     if(s.button("Predict", type="primary",key="025")):
+        s.write(inp)
         out=model.predict(inp)[0] 
         s.write(" Flood Probability for given conditions is: "+str(out*100)+"%")
 
